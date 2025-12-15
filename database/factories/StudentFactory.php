@@ -19,6 +19,7 @@ class StudentFactory extends Factory
         return [
         'name' => fake()->name(),
         'student_number' => fake()->unique()->numerify('2025-#####'), //generates unique student number
-        ];
+        'course' => fake()->randomElement(['BSIT', 'BSCS', 'BMMA', 'BSBA']),
+    ];
     }
 }

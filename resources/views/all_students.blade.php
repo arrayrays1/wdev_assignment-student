@@ -21,7 +21,7 @@
                 <th>ID</th>
                 <th>Name</th>
                 <th>Student Number</th>
-                <th>Action</th>
+                <th>Course</th> <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -30,9 +30,7 @@
                     <td>{{ $student->id }}</td>
                     <td>{{ $student->name }}</td>
                     <td>{{ $student->student_number }}</td>
-                    <td>
-                        <a href="{{ url('/student/' . $student->id) }}">View Profile</a>
-                    </td>
+                    <td>{{ $student->course }}</td> <td><a href="{{ url('/student/' . $student->id) }}">View Profile</a></td>
                 </tr>
             @endforeach
         </tbody>

@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name'); //student name
             $table->string('student_number')->unique(); //student number
+            $table->string('course');
             $table->timestamps();
         });
     }
